@@ -1,0 +1,24 @@
+{
+  "name": "@linclark/lin-clark.com",
+  "version": "1.0.0",
+  "description": "Lin Clark's web site.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors",
+    "start": "npm run dev",
+    "webpack": "webpack --progress --colors"
+  },
+  "author": "Lin Clark",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^5.3.2",
+    "basscss": "^7.0.3",
+    "css-loader": "^0.15.6",
+    "cssnext-loader": "^1.0.1",
+    "react": "^0.13.3",
+    "react-router": "^0.13.3",
+    "static-site-generator-webpack-plugin": "^1.0.0",
+    "webpack": "^1.10.5",
+    "webpack-dev-server": "^1.10.1"
+  }
+}

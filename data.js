@@ -1,6 +1,6 @@
 // data.js
 module.exports = {
-  title: 'My Static Site',
+  title: 'Lin Clark',
   routes: [
     '/',
     '/about'

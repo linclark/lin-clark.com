@@ -3,6 +3,6 @@ module.exports = {
   title: 'Lin Clark',
   routes: [
     '/',
-    '/about'
   ]
+    '/2015/09/09/foo'
 }

@@ -1,14 +1,14 @@
-// components/About.jsx
+// components/Blog.jsx
 var React = require('react')
 
-var About = React.createClass({
+var Blog = React.createClass({
   render: function () {
     return (
       <main>
-        About component
+        Blog component
       </main>
     )
   }
 })
 
-module.exports = About
+module.exports = Blog

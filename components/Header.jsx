@@ -8,7 +8,7 @@ var Header = React.createClass({
     return (
       <header>
         <Link to='/'>Index</Link>
-        <Link to='/about'>About</Link>
+        <Link to='/2015/09/09/foo'>blog</Link>
       </header>
     )
   }

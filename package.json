@@ -16,6 +16,7 @@
     "css-loader": "^0.15.6",
     "cssnext-loader": "^1.0.1",
     "fs-readdir-recursive": "^0.1.2",
+    "markdown-with-front-matter-loader": "^0.1.0",
     "react": "^0.13.3",
     "react-router": "^0.13.3",
     "static-site-generator-webpack-plugin": "^1.0.0",

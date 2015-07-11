@@ -10,7 +10,7 @@ var Blog = require('./components/Blog.jsx')
 var Routes = (
   <Route handler={Root} path='/'>
     <DefaultRoute handler={Index} />
-    <Route path='/:year/:month/:day/:filename' handler={Blog} />
+    <Route path='/blog/:year/:month/:day/:filename' handler={Blog} />
   </Route>
 )
 

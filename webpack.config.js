@@ -14,7 +14,8 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx$/, loader: 'babel-loader' },
-      { test: /\.css/, loader: 'css-loader!cssnext-loader' }
+      { test: /\.css/, loader: 'css-loader!cssnext-loader' },
+      { test: /\.md$/, loader: 'markdown-with-front-matter' }
     ]
   },
 
@@ -28,6 +29,12 @@ module.exports = {
       rem: false,
       pseudoElements: false,
       colorRgba: false
+    }
+  },
+
+  resolve: {
+    alias:{
+        fs: require.resolve('fs')
     }
   }
 }

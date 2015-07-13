@@ -2,7 +2,7 @@ var React = require('react')
 
 var Blog = React.createClass({
   getInitialState: function () {
-    var {year, month, day, filename} = this.props.params
+    var {year, month, day, filename} = this.props.params;
     var json = require(`./../content/blog/${year}/${month}/${day}/${filename}.md`);
 
     return json;

@@ -2,8 +2,8 @@
 var React = require('react')
 var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
-var Header = require('./Header.jsx')
 var css = require('../css/base.css')
+var Header = require('./Header')
 
 var Root = React.createClass({
   render: function () {

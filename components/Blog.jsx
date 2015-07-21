@@ -1,5 +1,5 @@
 var React = require('react')
-var ContentStore = require('./../stores/ContentStore.js')
+var ContentStore = require('./../stores/ContentStore')
 
 var Blog = React.createClass({
   getInitialState: function () {

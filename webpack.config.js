@@ -33,6 +33,7 @@ module.exports = {
   },
 
   resolve: {
+    extensions: ['', '.js', '.json', '.jsx'],
     alias:{
         fs: require.resolve('fs')
     }

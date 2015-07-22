@@ -77,7 +77,7 @@ function adaptivetheme_preprocess_html(&$vars) {
 </figure></dd>
 
 <dt><strong>Value</strong></dt><dd>
-The HTML rendered with <code>render($item)</code> above contains the value. This works for core fields, but your mileage may vary with contributed field formatters. If a field formatter puts extraneous HTML directly into the field value, this gets in the way of getting a clean value. 
+The HTML rendered with <code>render($item)</code> above contains the value. This works for core fields, but your mileage may vary with contributed field formatters. If a field formatter puts extraneous HTML directly into the field value, this gets in the way of getting a clean value.
 <br /><br />One way to get around this is to use the helper attributes <code>content</code> and <code>resource</code>. If you maintain a contrib field formatter, feel free to ping me on IRC to check the RDFa for your values, or check with people in #drupal-rdf.
 </dd>
 </dl>
@@ -99,4 +99,4 @@ The HTML rendered with <code>render($item)</code> above contains the value. This
 <h2>Feedback?</h2>
 <p>This will probably turn into a page or five in the handbooks, so please let me know... Anything I missed? Anything that could be clearer? Anything you would like to hear more about?</p>
 <aside class="warning"><h2>Before you comment</h2><p>Posts about RDFa and microdata tend to get more than their fair share of trolls (and remarkably uninformed ones at that) from both sides.</p><p>I have been working on generalized ways of outputting both and have hand-coded both. There is stuff to like and stuff to dislike about each approach (which I plan to blog about soon).</p><p>If you have experience you want to share and a desire to engage in reasoned discourse about the technical and social differences in the two, I'd be eager to hear... but polemics just don't interest me so much, especially on this blog.</p></aside>
-<footer class="funding">This work has been funded by  the  European  Community's  Seventh  Framework  Programme  (FP7/2007­2013)  under  Grant  Agreement  n° 256975 ,  LOD Around­The­Clock (LATC)  Support Action.</footer>
+<footer class="funding">This work has been funded by the European Community's Seventh Framework Programme (FP7/20072012) under Grant Agreement n256975, LODAroundTheClock(LATC) SupportAction.</footer>

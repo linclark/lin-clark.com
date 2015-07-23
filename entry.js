@@ -2,6 +2,7 @@
 var React = require('react')
 var Router = require('react-router')
 var Routes = require('./Routes')
+var css = require('./css/base.css')
 
 module.exports = function render(locals, callback) {
   Router.run(Routes, locals.path, function (Handler) {

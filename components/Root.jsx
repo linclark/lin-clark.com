@@ -2,7 +2,6 @@
 var React = require('react')
 var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
-var css = require('../css/base.css')
 var Header = require('./Header')
 
 var Root = React.createClass({
@@ -11,7 +10,7 @@ var Root = React.createClass({
       <html>
         <head>
           <title>{this.props.title}</title>
-          <style dangerouslySetInnerHTML={{ __html: css }} />
+          <link rel="stylesheet" href="/styles.css" />
         </head>
         <body>
           <Header />

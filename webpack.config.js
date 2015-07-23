@@ -1,4 +1,5 @@
 // webpack.config.js
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var data = require('./data')
 
@@ -14,23 +15,15 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader?stage=1' },
-      { test: /\.css/, loader: 'css-loader!cssnext-loader' },
+      { test: /\.css/, loader: ExtractTextPlugin.extract("css-loader") },
       { test: /\.md$/, loader: 'markdown-with-front-matter' }
     ]
   },
 
   plugins: [
-    new StaticSiteGeneratorPlugin('bundle.js', data.routes, data)
+    new StaticSiteGeneratorPlugin('bundle.js', data.routes, data),
+    new ExtractTextPlugin("styles.css")
   ],
-
-  cssnext: {
-    compress: true,
-    features: {
-      rem: false,
-      pseudoElements: false,
-      colorRgba: false
-    }
-  },
 
   resolve: {
     extensions: ['', '.js', '.json', '.jsx'],

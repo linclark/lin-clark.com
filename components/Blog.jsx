@@ -8,10 +8,10 @@ var Blog = React.createClass({
   },
   render: function () {
     return (
-      <div>
+      <main>
         <h2>{this.state.title}</h2>
         <div dangerouslySetInnerHTML={{ __html: this.state.__content }}></div>
-      </div>
+      </main>
     )
   }
 })

@@ -12,6 +12,10 @@ module.exports = {
     libraryTarget: 'umd'
   },
 
+  externals: {
+    "fs": "fs"
+  },
+
   module: {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader?stage=1' },
@@ -26,9 +30,6 @@ module.exports = {
   ],
 
   resolve: {
-    extensions: ['', '.js', '.json', '.jsx'],
-    alias:{
-        fs: require.resolve('fs')
-    }
+    extensions: ['', '.js', '.json', '.jsx']
   }
 }

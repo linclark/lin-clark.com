@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --progress --colors",
     "start": "npm run dev",
-    "webpack": "webpack --progress --colors"
+    "webpack": "rm -r build/*; webpack --progress --colors"
   },
   "author": "Lin Clark",
   "license": "ISC",

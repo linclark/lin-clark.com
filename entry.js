@@ -7,7 +7,7 @@ require('./css/big-screens.css')
 
 module.exports = function render(locals, callback) {
   Router.run(Routes, locals.path, function (Handler) {
-    var html = React.renderToString(React.createElement(Handler, locals))
+    var html = React.renderToStaticMarkup(React.createElement(Handler, locals))
     callback(null, '<!DOCTYPE html>' + html)
   })
 }

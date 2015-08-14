@@ -4,9 +4,8 @@ var ContentStore = {
    * Get a piece of content that is published on this site.
    */
   getPost: function(type, year, month, day, filename) {
-    pathFragments = [type, year, month, day, filename];
-    var json = require("./../content/" + pathFragments.join("/") + ".md");
-    return json;
+    var route = _assembleRoute([type, year, month, day, filename]);
+    return _loadContent(route);
   },
 
   /**
@@ -14,7 +13,11 @@ var ContentStore = {
    * @param {int} num - Number of posts
    */
   getContent: function(num) {
-    return this.getRoutes().splice(0, num);
+    var content = [];
+    this.getRoutes().splice(0, num).forEach(function(val) {
+      content.push(_loadContent(val));
+    });
+    return content;
   },
 
   /**
@@ -40,7 +43,26 @@ var ContentStore = {
       })
     return paths;
   }
-
 };
+
+/**
+ * Load content for a route.
+ * @param {string} route
+ */
+function _loadContent(route) {
+  var content= require("./../content" + route + ".md");
+  if (!content.link) {
+    content.link = route;
+  }
+  return content;
+}
+
+/**
+ * Assemble a route string from parts.
+ * @param {array}
+ */
+function _assembleRoute(parts) {
+  return "/" + parts.join("/");
+}
 
 module.exports = ContentStore;

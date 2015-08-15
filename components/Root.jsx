@@ -11,6 +11,7 @@ var Root = React.createClass({
         <head>
           <title>{this.props.title}</title>
           <link rel="stylesheet" href="/styles.css" />
+          <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css' />
         </head>
         <body>
           <Header />

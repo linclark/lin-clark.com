@@ -1,4 +1,74 @@
+html,
 body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #ddd calc(((100% - 1020px) / 2) + 1020px), #fff 1%);
+  background-position: right 400px;
   margin: auto;
   width: 1020px;
+}
+
+header::before {
+  content: "";
+  border-left: 150px solid transparent;
+  border-top: 400px solid #fff;
+  border-left-style: outset;
+  -webkit-filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
+  filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
+  height: 0;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  width: 870px;
+  z-index: -1;
+}
+
+header div {
+  height: 0px;
+}
+
+#home {
+  /* header height - #intro padding */
+  margin-top: 300px;
+  box-shadow: inset -15px 0 5px -5px rgba(0, 0, 0, 0.2);
+  height: 100%;
+  padding: 20px 0 20px 150px;
+}
+
+#intro {
+  /* header triangle width + #home section padding-left */
+  padding-left: calc(150px + 2em);
+  padding-top: 100px;
+  width: 50%;
+}
+
+.card {
+  background: #fff;
+  box-shadow: -15px 12px 10px -5px rgba(0, 0, 0, 0.2);
+  margin-right: 40px;
+  margin-top: 20px;
+  padding: 2em;
+}
+
+#home section {
+  box-sizing: padding-box;
+  line-height: 1.4em;
+}
+
+#home ul {
+  padding: 0px;
+}
+
+#home ul li {
+  padding-bottom: 1em;
+}
+
+#home h2 {
+  margin-top: 0;
+}
+
+.content-list a .summary {
+  font-size: .8em;
+  color: #777;
 }

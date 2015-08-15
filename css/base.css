@@ -3,4 +3,11 @@ body {
   font-size: 1.2em;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#home ul {
+  list-style: none;
 }

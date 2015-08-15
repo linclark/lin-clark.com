@@ -6,8 +6,8 @@ var ContentList = React.createClass({
       <div className="content-list">
         <ul>
           {this.props.contentList.map(function(content) {
-            return <li><a href={content.link}><div>{content.title}</div>
-              <div>{content.summary}</div>
+            return <li><a href={content.link}><div className="title">{content.title}</div>
+              <div className="summary">{content.summary}</div>
             </a></li>;
           })}
         </ul>

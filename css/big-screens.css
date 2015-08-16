@@ -12,8 +12,8 @@ body {
 
 header::before {
   content: "";
-  border-left: 20px solid transparent;
-  border-top: 40px solid #fff;
+  border-left: 25px solid transparent;
+  border-top: 50px solid #fff;
   border-left-style: outset;
   -webkit-filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
   filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));

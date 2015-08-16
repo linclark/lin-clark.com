@@ -4,9 +4,9 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, #fff calc(((100% - 1070px) / 2) + 1070px), #fff 1%);
+  background: linear-gradient(to right, #eee calc(((100% - 1070px) / 2) + 1070px), #fff 1%);
   background-position: right 400px;
-  margin: 0 auto;
+  max-width: none;
   width: 1070px;
 }
 
@@ -74,32 +74,5 @@ main {
 }
 
 .card {
-  background: #fff;
-  box-shadow: -15px 12px 10px -5px rgba(0, 0, 0, 0.2);
-  margin-left: 20px;
   margin-right: 40px;
-  margin-top: 20px;
-  padding: 2em;
-}
-
-#home section {
-  box-sizing: padding-box;
-  line-height: 1.4em;
-}
-
-#home ul {
-  padding: 0px;
-}
-
-#home ul li {
-  padding-bottom: 1em;
-}
-
-#home h2 {
-  margin-top: 0;
-}
-
-.content-list a .summary {
-  font-size: .8em;
-  color: #777;
 }

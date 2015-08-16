@@ -1,6 +1,48 @@
 body {
+  background: #eee;
   font-family: 'Muli', 'Hevletica Neue', sans-serif;
   font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1070px) {
+  header {
+    background: #fff;
+    box-shadow: -15px 12px 10px -5px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+    padding: 2em;
+  }
+  #intro .hello {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 0;
+  }
+
+  #intro .bio {
+    font-size: .8em;
+  }
+
+  #intro .tagline {
+    font-size: 1em;
+    margin: 0;
+  }
+  @media (min-width: 580px) {
+    #intro .hello {
+      font-size: 3em;
+    }
+    .tagline {
+      font-size: 1.8em;
+    }
+  }
+  @media (min-width: 580px) {
+    #intro .hello {
+      font-size: 3em;
+    }
+    .tagline {
+      font-size: 1.8em;
+    }
+  }
 }
 
 a {
@@ -10,4 +52,33 @@ a {
 
 #home ul {
   list-style: none;
+}
+
+.card {
+  background: #fff;
+  box-shadow: -15px 12px 10px -5px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 2em;
+}
+
+#home ul {
+  padding: 0px;
+}
+
+.content-list a .summary {
+  font-size: .8em;
+  color: #777;
+}
+
+#home section {
+  box-sizing: padding-box;
+  line-height: 1.4em;
+}
+
+#home ul li {
+  padding-bottom: 1em;
+}
+
+#home h2 {
+  margin-top: 0;
 }

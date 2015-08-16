@@ -5,7 +5,7 @@ var IntroHeader = require('./IntroHeader')
 
 var Header = React.createClass({
   render: function () {
-    var h = (this.props.path == "/") ? <IntroHeader /> : "";
+    var h = (this.props.path == "/") ? <IntroHeader /> : <div>Hi, I'm Lin Clark</div>;
     return (
       <header>
         {h}

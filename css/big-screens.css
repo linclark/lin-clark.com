@@ -4,35 +4,50 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, #ddd calc(((100% - 1070px) / 2) + 1070px), #fff 1%);
+  background: linear-gradient(to right, #fff calc(((100% - 1070px) / 2) + 1070px), #fff 1%);
   background-position: right 400px;
-  margin: auto;
+  margin: 0 auto;
   width: 1070px;
 }
 
 header::before {
   content: "";
-  border-left: 200px solid transparent;
-  border-top: 400px solid #fff;
+  border-left: 20px solid transparent;
+  border-top: 40px solid #fff;
   border-left-style: outset;
   -webkit-filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
   filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
   height: 0;
+  /* #index border-left-width - this border left */
+  margin-left: 180px;
   position: absolute;
   -webkit-backface-visibility: hidden;
   width: 870px;
   z-index: -1;
 }
 
+#index header::before {
+  border-left-width: 200px;
+  border-top-width: 400px;
+  margin-left: 0px;
+  width: 870px;
+}
+
 header div {
   height: 0px;
+}
+
+main {
+  /* header height */
+  margin-top: 40px;
+  box-shadow: inset -15px 0 5px -5px rgba(0, 0, 0, 0.2);
+  height: calc(100% x 2);
+  padding: 20px 0 20px 200px;
 }
 
 #home {
   /* header height - #intro padding */
   margin-top: 310px;
-  box-shadow: inset -15px 0 5px -5px rgba(0, 0, 0, 0.2);
-  height: 100%;
   padding: 20px 0 20px 200px;
 }
 

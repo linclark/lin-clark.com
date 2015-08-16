@@ -13,7 +13,7 @@ var Root = React.createClass({
           <link rel="stylesheet" href="/styles.css" />
           <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css' />
         </head>
-        <body className={this.props.path === "/" ? "index" : ""}>
+        <body id={this.props.path === "/" ? "index" : ""}>
           <Header {...this.props} />
           <RouteHandler {...this.props} />
         </body>

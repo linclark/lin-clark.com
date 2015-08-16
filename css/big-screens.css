@@ -47,8 +47,11 @@ main {
   /* header height */
   margin-top: 40px;
   box-shadow: inset -15px 0 5px -5px rgba(0, 0, 0, 0.2);
-  height: calc(100% x 2);
   padding: 20px 0 20px 200px;
+}
+
+#index main {
+  height: calc(100%);
 }
 
 #home {

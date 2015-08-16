@@ -4,15 +4,15 @@ body {
 }
 
 body {
-  background: linear-gradient(to right, #ddd calc(((100% - 1020px) / 2) + 1020px), #fff 1%);
+  background: linear-gradient(to right, #ddd calc(((100% - 1070px) / 2) + 1070px), #fff 1%);
   background-position: right 400px;
   margin: auto;
-  width: 1020px;
+  width: 1070px;
 }
 
 header::before {
   content: "";
-  border-left: 150px solid transparent;
+  border-left: 200px solid transparent;
   border-top: 400px solid #fff;
   border-left-style: outset;
   -webkit-filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
@@ -30,17 +30,17 @@ header div {
 
 #home {
   /* header height - #intro padding */
-  margin-top: 300px;
+  margin-top: 310px;
   box-shadow: inset -15px 0 5px -5px rgba(0, 0, 0, 0.2);
   height: 100%;
-  padding: 20px 0 20px 150px;
+  padding: 20px 0 20px 200px;
 }
 
 #intro {
   /* header triangle width + #home section padding-left */
-  padding-left: calc(150px + 2em);
-  padding-top: 100px;
-  width: 50%;
+  padding-left: calc(200px + 2em + 20px);
+  padding-top: 90px;
+  width: 70%;
 }
 
 #intro .hello {
@@ -61,6 +61,7 @@ header div {
 .card {
   background: #fff;
   box-shadow: -15px 12px 10px -5px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
   margin-right: 40px;
   margin-top: 20px;
   padding: 2em;

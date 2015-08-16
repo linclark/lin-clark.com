@@ -4,7 +4,7 @@ var Header = React.createClass({
   render: function () {
     return (
       <div id="intro">
-        <p className="hello">Hi, I'm <a href='/'>Lin Clark</a></p>
+        {this.props.children}
         <p className="tagline">I code and talk about code.</p>
         <div className="bio">
           <p>I like to contribute. You'll find me writing and talking about things you can do with JavaScript.</p>

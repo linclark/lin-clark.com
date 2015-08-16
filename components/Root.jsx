@@ -11,10 +11,10 @@ var Root = React.createClass({
         <head>
           <title>{this.props.title}</title>
           <link rel="stylesheet" href="/base.css" />
-          <link rel="stylesheet" media="(min-width: 1070px)" href="/big-screens.css" />
+          <link rel="stylesheet" media="(min-width: 1000px)" href="/big-screens.css" />
           <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css' />
         </head>
-        <body id={this.props.path === "/" ? "index" : ""}>
+        <body id={this.props.path === "/" ? "index" : "subpage"}>
           <Header {...this.props} />
           <RouteHandler {...this.props} />
         </body>

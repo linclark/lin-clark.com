@@ -1,5 +1,6 @@
 // webpack.config.js
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var path = require('path')
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var data = require('./data')
 
@@ -19,7 +20,6 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader?stage=1' },
-      { test: /\.css/, loader: ExtractTextPlugin.extract("css-loader") },
       { test: /\.md$/, loader: 'markdown-with-front-matter' }
     ]
   },

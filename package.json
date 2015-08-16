@@ -4,8 +4,9 @@
   "description": "Lin Clark's web site.",
   "main": "index.js",
   "scripts": {
+    "css": "cp css/* build/",
     "dev": "webpack-dev-server --progress --colors",
-    "start": "npm run dev",
+    "start": "http-server build/",
     "webpack": "rm -r build/*; webpack --progress --colors"
   },
   "author": "Lin Clark",
@@ -17,6 +18,7 @@
     "cssnext-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^0.8.2",
     "fs-readdir-recursive": "^0.1.2",
+    "http-server": "^0.8.0",
     "markdown-with-front-matter-loader": "^0.1.0",
     "react": "^0.13.3",
     "react-router": "^0.13.3",

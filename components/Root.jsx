@@ -10,7 +10,8 @@ var Root = React.createClass({
       <html>
         <head>
           <title>{this.props.title}</title>
-          <link rel="stylesheet" href="/styles.css" />
+          <link rel="stylesheet" href="/base.css" />
+          <link rel="stylesheet" media="(min-width: 1070px)" href="/big-screens.css" />
           <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css' />
         </head>
         <body id={this.props.path === "/" ? "index" : ""}>

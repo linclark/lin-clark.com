@@ -1,17 +1,14 @@
 // components/Header.jsx
 var React = require('react')
 var Router = require('react-router')
+var IntroHeader = require('./IntroHeader')
 
 var Header = React.createClass({
   render: function () {
+    var h = (this.props.path == "/") ? <IntroHeader /> : "";
     return (
       <header>
-        <div id="intro">
-          <p>Hi, I'm <a href='/'>Lin Clark</a></p>
-          <p>I code and talk about code.</p>
-          <p>I like to contribute. You'll find me writing and talking about things you can do with JavaScript.</p>
-          <p>In a past life I worked at npm, developed core modules for Drupal, created MicrodataPHP, and contributed to W3C standardization efforts, among other OSS contributions.</p>
-        </div>
+        {h}
       </header>
     )
   }

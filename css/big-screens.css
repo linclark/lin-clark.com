@@ -43,6 +43,21 @@ header div {
   width: 50%;
 }
 
+#intro .hello {
+  font-size: 3em;
+  line-height: 1em;
+  margin: 0;
+}
+
+#intro .bio {
+  font-size: .8em;
+}
+
+#intro .tagline {
+  font-size: 1.8em;
+  margin: 0;
+}
+
 .card {
   background: #fff;
   box-shadow: -15px 12px 10px -5px rgba(0, 0, 0, 0.2);

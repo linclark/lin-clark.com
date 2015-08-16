@@ -19,8 +19,8 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.jsx?$/, loader: 'babel-loader?stage=1' },
-      { test: /\.md$/, loader: 'markdown-with-front-matter' }
+      { test: /\.jsx?$/, loader: 'babel-loader?stage=1', include: [path.resolve(__dirname, "components"), path.resolve(__dirname, "Routes.jsx")] },
+      { test: /\.md$/, loader: 'markdown-with-front-matter', include: [path.resolve(__dirname, "content")]}
     ]
   },
 

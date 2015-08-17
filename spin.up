@@ -1,3 +1,4 @@
 http-server build
 npm run watch-js
+npm run watch-images
 npm run watch-css

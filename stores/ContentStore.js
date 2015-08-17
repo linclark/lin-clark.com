@@ -14,8 +14,12 @@ var ContentStore = {
    */
   getContent: function(num) {
     var content = [];
-    this.getRoutes().splice(0, num).forEach(function(val) {
-      content.push(_loadContent(val));
+    this.getRoutes().splice(0, num).forEach(function(route) {
+      var post = _loadContent(route);
+      if (route.indexOf("/offsite/") !== -1) {
+        post.type = "linkout";
+      }
+      content.push(post);
     });
     return content;
   },

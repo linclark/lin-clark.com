@@ -6,7 +6,9 @@ var ContentList = React.createClass({
       <div className="content-list">
         <ul>
           {this.props.contentList.map(function(content) {
-            return <li><a href={content.link}><div className="title">{content.title}</div>
+            var linkout = <span className="linkout">&nbsp;</span>;
+            return <li><a href={content.link}>
+              <div className="title">{content.title}{content.type === "linkout" ? linkout : ""}</div>
               <div className="summary">{content.summary}</div>
             </a></li>;
           })}

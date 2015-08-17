@@ -82,3 +82,12 @@ a {
 #home h2 {
   margin-top: 0;
 }
+
+.linkout {
+  background-image: url("./../images/linkout.svg");
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: .8em auto;
+  display: inline-block;
+  padding-right: .8em;
+}

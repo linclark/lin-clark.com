@@ -13,6 +13,8 @@ var Root = React.createClass({
           <link rel="stylesheet" href="/base.css" />
           <link rel="stylesheet" media="(min-width: 1000px)" href="/big-screens.css" />
           <link href='http://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css' />
+
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         </head>
         <body id={this.props.path === "/" ? "index" : "subpage"}>
           <Header {...this.props} />

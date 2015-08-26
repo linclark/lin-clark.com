@@ -11,7 +11,7 @@ var Root = React.createClass({
         <head>
           <title>{this.props.title}</title>
           <link rel="stylesheet" href="/base.css" />
-          <link rel="stylesheet" media="(min-width: 1000px)" href="/big-screens.css" />
+          <link rel="stylesheet" href="/styles.css" />
           <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css' />
 
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />

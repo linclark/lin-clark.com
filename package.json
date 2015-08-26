@@ -4,23 +4,19 @@
   "description": "Lin Clark's web site.",
   "main": "index.js",
   "scripts": {
-    "css": "cp css/* build/",
-    "start": "http-server build/",
-    "images": "cp -r images build",
-    "watch-css": "sane 'npm run css' css/",
-    "watch-js": "sane 'npm run webpack' components/",
-    "watch-images": "sane 'npm run images' images/",
-    "watch": "spinup",
-    "webpack": "rm -r build/*; webpack --progress --colors; npm run css; npm run images"
+    "clean": "rm -r build/*",
+    "dev": "webpack-dev-server --progress --colors",
+    "webpack": "webpack --progress --colors"
   },
   "author": "Lin Clark",
   "license": "ISC",
   "devDependencies": {
     "babel-loader": "^5.3.2",
     "basscss": "^7.0.3",
-    "css-loader": "^0.15.6",
+    "css-loader": "^0.16.0",
     "cssnext-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
     "fs-readdir-recursive": "^0.1.2",
     "http-server": "^0.8.0",
     "markdown-with-front-matter-loader": "^0.1.0",

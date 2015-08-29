@@ -1,4 +1,6 @@
 var React = require('react')
+var githubImg = require('./../images/github.svg')
+var twitterImg = require('./../images/twitter.svg')
 
 var Header = React.createClass({
   render: function () {
@@ -12,9 +14,9 @@ var Header = React.createClass({
           <p>In a past life I worked at npm, developed core modules for Drupal, created MicrodataPHP, and contributed to W3C standardization efforts, among other OSS contributions.</p>
         </div>
         <div className="find-me">
-          <a href="https://twitter.com/linclark"><img src="/images/twitter.svg" /></a>
+          <a href="https://twitter.com/linclark"><img src={twitterImg} /></a>
           <span className="divider">&#10731;</span>
-          <a href="https://github.com/linclark/"><img src="/images/github.svg" /></a>
+          <a href="https://github.com/linclark/"><img src={githubImg} /></a>
         </div>
         <hr />
       </div>

@@ -22,7 +22,7 @@ module.exports = {
       { test: /\.jsx?$/, loader: 'babel-loader?stage=1', include: [path.resolve(__dirname, "components"), path.resolve(__dirname, "Routes.jsx")] },
       { test: /\.md$/, loader: 'markdown-with-front-matter', include: [path.resolve(__dirname, "content")]},
       { test: /\.css/, loader: ExtractTextPlugin.extract("css-loader") },
-      { test: /\.(jpg|svg)$/, loader: "file-loader" }
+      { test: /\.(jpg|svg|ico)$/, loader: "file-loader" }
     ]
   },
 

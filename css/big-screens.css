@@ -1,87 +1,50 @@
-html,
-body {
-  height: 100%;
-}
+@media (min-width: 1000px) {
+  html,
+  body {
+    height: 100%;
+  }
 
-body {
-  background: linear-gradient(to right, #eee calc(((100% - 1070px) / 2) + 1070px), #fff 1%);
-  background-position: right 400px;
-  max-width: none;
-  width: 1070px;
-}
+  body {
+    max-width: 1070px;
+    padding: 30px 100px;
+  }
 
-header::before {
-  content: "";
-  border-left: 25px solid transparent;
-  border-top: 50px solid #fff;
-  border-left-style: outset;
-  -webkit-filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
-  filter: drop-shadow(-10px 12px 5px rgba(0,0,0,0.3));
-  height: 0;
-  /* #index border-left-width - this border left */
-  margin-left: 180px;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  width: 870px;
-  z-index: -1;
-}
+  #index main {
+    height: calc(100%);
+  }
+  #index main section {
+    float: left;
+    width: 49%;
+  }
 
-#index header::before {
-  border-left-width: 200px;
-  border-top-width: 400px;
-  margin-left: 0px;
-  width: 870px;
-}
+  #index main section:last-child {
+    float: right;
+  }
 
-header > div {
-  height: 0px;
-}
+  #intro .hello {
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    padding-top: 100px;
+  }
 
-#subpage header div {
-  /* #index border-left-width + .card margin and padding */
-  margin-left: calc(200px + 20px + 2em);
-  padding-top: 10px;
-}
+  #intro .bio {
+  }
 
-main {
-  /* header height */
-  margin-top: 40px;
-  box-shadow: inset -15px 0 5px -5px rgba(0, 0, 0, 0.2);
-  padding: 20px 0 20px 200px;
-}
+  #intro .tagline {
+    font-size: 1.8em;
+    margin: 0;
+  }
 
-#index main {
-  height: calc(100%);
-}
+  .title {
+    font-size: 1.4em;
+  }
 
-#home {
-  /* header height - #intro padding */
-  margin-top: 310px;
-  padding: 20px 0 20px 200px;
-}
-
-#intro {
-  /* header triangle width + #home section padding-left */
-  padding-left: calc(200px + 2em + 20px);
-  padding-top: 90px;
-  width: 70%;
-}
-
-#intro .hello {
-  font-size: 3em;
-  line-height: 1em;
-  margin: 0;
-}
-
-#intro .bio {
-  font-size: .8em;
-}
-
-#intro .tagline {
-  font-size: 1.8em;
-  margin: 0;
-}
-
-.card {
-  margin-right: 40px;
+  #intro .headshot {
+    background-image: url("./../images/headshot.jpg");
+    float: right;
+    height: 400px;
+    margin-left: 20px;
+    width: 400px;
+  }
 }

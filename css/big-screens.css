@@ -41,6 +41,7 @@
   }
 
   #intro .headshot {
+    border-radius: 50%;
     background-image: url("./../images/headshot.jpg");
     float: right;
     height: 400px;

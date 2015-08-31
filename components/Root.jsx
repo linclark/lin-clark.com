@@ -3,6 +3,7 @@ var React = require('react')
 var Router = require('react-router')
 var RouteHandler = Router.RouteHandler
 var Header = require('./Header')
+var Footer = require('./Footer')
 
 var favicon = require('./../images/favicon.ico')
 
@@ -23,6 +24,7 @@ var Root = React.createClass({
         <body id={this.props.path === "/" ? "index" : "subpage"}>
           <Header {...this.props} />
           <RouteHandler {...this.props} />
+          <Footer />
         </body>
       </html>
     )

@@ -2,7 +2,7 @@ var React = require('react')
 var ContentStore = require('./../stores/ContentStore')
 var Comments = require('./Comments')
 
-var Blog = React.createClass({
+var BlogPost = React.createClass({
   getInitialState: function () {
     var {year, month, day, filename} = this.props.params;
     return ContentStore.getPost('blog', year, month, day, filename)
@@ -20,4 +20,4 @@ var Blog = React.createClass({
   }
 })
 
-module.exports = Blog
+module.exports = BlogPost

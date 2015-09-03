@@ -11,6 +11,7 @@ var WritingArchive = React.createClass({
   render: function () {
     return (
       <main>
+        <h1>Writing</h1>
         <ContentList contentList={this.state.contentList} />
       </main>
     )

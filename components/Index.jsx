@@ -14,6 +14,7 @@ var Index = React.createClass({
         <section>
           <h2>writing</h2>
           <ContentList contentList={this.state.contentList} />
+          <a className="see-all" href="/writing">see all ></a>
         </section>
         <section>
           <h2>speaking</h2>

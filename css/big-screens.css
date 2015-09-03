@@ -40,12 +40,20 @@
     font-size: 1.4em;
   }
 
-  #intro .headshot {
+  .headshot {
+    background-image: url("./../images/headshot-inside.jpg");
     border-radius: 50%;
-    background-image: url("./../images/headshot.jpg");
     float: right;
-    height: 400px;
+    height: 40px;
     margin-left: 20px;
+    margin-top: -5px;
+    width: 40px;
+  }
+
+  #intro .headshot {
+    background-image: url("./../images/headshot.jpg");
+    height: 400px;
+    margin-top: 0;
     width: 400px;
   }
 }

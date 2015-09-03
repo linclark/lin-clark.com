@@ -14,6 +14,9 @@ var ContentStore = {
    */
   getContent: function(num) {
     var content = [];
+
+    if (num === undefined) num = 1000
+
     this.getRoutes().splice(0, num).forEach(function(route) {
       var post = _loadContent(route);
       if (route.indexOf("/offsite/") !== -1) {

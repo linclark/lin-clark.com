@@ -5,5 +5,6 @@ module.exports = {
   title: 'Lin Clark',
   routes: [
     '/',
+    "/writing",
   ].concat(ContentStore.getRoutes("blog"))
 }

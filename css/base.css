@@ -68,11 +68,11 @@ a {
   text-decoration: none;
 }
 
-#home ul {
+.content-list ul {
   list-style: none;
 }
 
-#home ul {
+.content-list ul {
   padding: 0px;
 }
 
@@ -81,12 +81,12 @@ a {
   color: #777;
 }
 
-#home section {
+.content-list section {
   box-sizing: padding-box;
   line-height: 1.4em;
 }
 
-#home ul li {
+.content-list ul li {
   padding-bottom: 1em;
 }
 

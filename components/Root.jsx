@@ -5,7 +5,7 @@ var RouteHandler = Router.RouteHandler
 var Header = require('./Header')
 var Footer = require('./Footer')
 
-var favicon = require('./../images/favicon.ico')
+var favicon = "/" + require('./../images/favicon.ico')
 
 var Root = React.createClass({
   render: function () {

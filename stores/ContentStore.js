@@ -11,19 +11,41 @@ var ContentStore = {
   /**
    * Get a subset of content entries in reverse chronological order.
    * @param {int} num - Number of posts
+   * @param {function} filter - a filter to apply to post routes
    */
-  getContent: function(num) {
+  getContent: function(num, filter) {
     var content = [];
 
-    if (num === undefined) num = 1000
+    if (!num) num = 1000
+    if (!filter) {
+      filter = function() {return true;}
+    }
 
-    this.getRoutes().splice(0, num).forEach(function(route) {
+    var routes = this.getRoutes().splice(0, num).filter(filter).forEach(function(route) {
       var post = _loadContent(route);
-      if (route.indexOf("/offsite/") !== -1) {
+      if (_getContentCategory(route) == "offsite") {
         post.type = "linkout";
       }
       content.push(post);
     });
+    return content;
+  },
+
+  /**
+   * Get a list of content published in the year specified. If includeLastYear
+   * is true, then also fetch the previous year's
+   * @param {int} year
+   * @param {bool} fetchLastYear
+   */
+  getContentByYear: function(year, includeLastYear) {
+    var content = this.getContent(null, function(route) {
+      var routeParts = _explodeRoute(route);
+      var yearSlug = routeParts[2];
+      if (yearSlug == year || (!!includeLastYear && yearSlug == year - 1)) {
+        return true;
+      }
+    });
+
     return content;
   },
 
@@ -72,4 +94,20 @@ function _assembleRoute(parts) {
   return "/" + parts.join("/");
 }
 
+/**
+ * Explode route
+ * @param {string} route
+ */
+function _explodeRoute(route) {
+  return route.split("/");
+}
+
+/**
+ * Figure out what kind of content this is.
+ * @param {string} route
+ */
+ function _getContentCategory(route) {
+   var routeParts = _explodeRoute(route);
+   return routeParts[1];
+ }
 module.exports = ContentStore;

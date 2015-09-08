@@ -4,8 +4,9 @@
   "description": "Lin Clark's web site.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean; npm run webpack",
+    "build": "npm run clean; npm run webpack; npm run content-images",
     "clean": "rm -r build/*",
+    "content-images": "cp -r images build/images",
     "deploy": "surge build http://lin-clark.com",
     "dev": "webpack-dev-server --progress --colors",
     "webpack": "webpack --progress --colors"

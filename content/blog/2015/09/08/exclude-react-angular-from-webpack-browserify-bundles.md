@@ -1,7 +1,7 @@
 ---
-title: "Save the Bytes: Keeping libraries like React and Angular out of your Browserify and Webpack bundles"
+title: "Save the bytes"
 date: 2015-09-08
-summary: Use CDNs for large JS libraries instead of bundling it with your custom JS.
+summary: "Keeping libraries like React and Angular out of your Browserify and Webpack bundles"
 ---
  If you use libraries like React and Angular, and if you're using a module bundler like Browserify or Webpack, then you probably know how much these libraries can beef up your bundle. Even when compressed and minified, a library like Angular adds 50 kB to your bundle.
 

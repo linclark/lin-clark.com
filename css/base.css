@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Clarker Felt";
+    src: url("./clarkerfelt.woff") format('woff');
+}
+
 body {
   font-family: 'Lato', 'Hevletica Neue', sans-serif;
   font-size: 1.2em;
@@ -6,8 +11,8 @@ body {
   padding: 20px;
 }
 
-body, h1, h2, h3, h4, .hello {
-  font-weight: 400;
+h1, h2, h3, h4, .hello {
+  font-family: "Clarker Felt"
 }
 
 h1 {

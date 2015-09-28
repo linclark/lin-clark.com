@@ -22,7 +22,8 @@ module.exports = {
       { test: /\.jsx?$/, loader: 'babel-loader?stage=1', include: [path.resolve(__dirname, "components"), path.resolve(__dirname, "Routes.jsx")] },
       { test: /\.md$/, loader: 'markdown-with-front-matter', include: [path.resolve(__dirname, "content")]},
       { test: /\.css/, loader: ExtractTextPlugin.extract("css-loader") },
-      { test: /\.(jpg|svg|ico)$/, loaders: ["file-loader", "image-webpack-loader"] }
+      { test: /\.(png|jpg|svg|ico)$/, loaders: ["file-loader", "image-webpack-loader"] },
+      { test: /\.woff$/, loader: "file-loader" }
     ]
   },
 

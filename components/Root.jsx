@@ -14,7 +14,7 @@ var Root = React.createClass({
         <head>
           <title>{this.props.title}</title>
           <link rel="stylesheet" href="/styles.css" />
-          <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css' />
+          <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css' />
 
           <link rel="shortcut icon" href={favicon} type="image/x-icon" />
           <link rel="icon" href={favicon} type="image/x-icon" />

@@ -11,7 +11,10 @@ var BlogPost = React.createClass({
     return (
       <main>
         <div className="card">
-          <h2>{this.state.title}</h2>
+          <header>
+            <h1>{this.state.title}</h1>
+            <p>{this.state.summary||this.state.subtitle}</p>
+          </header>
           <div dangerouslySetInnerHTML={{ __html: this.state.__content }}></div>
         </div>
         <Comments />

@@ -1,14 +1,28 @@
 body {
   font-family: 'Lato', 'Hevletica Neue', sans-serif;
   font-size: 1.2em;
-  font-weight: 300;
   max-width: 700px;
   margin: 0 auto;
   padding: 20px;
 }
 
-h1, h2, h3, h4, .hello {
-  font-weight: 500;
+body, h1, h2, h3, h4, .hello {
+  font-weight: 400;
+}
+
+h1 {
+  color: #D45959;
+  font-size: 3.5em;
+  font-weight: 300;
+  line-height: 1em;
+  margin: .2em 0;
+}
+
+#subpage header p {
+  color: #777;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 0;
 }
 
 img {
@@ -19,7 +33,6 @@ img {
 .see-all {
   font-size: 1em;
   font-variant: small-caps;
-  font-weight: 500;
   letter-spacing: .1em;
 }
 

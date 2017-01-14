@@ -8,16 +8,10 @@ var twitterImg = "/" + require('./../images/twitter.svg')
 var Header = React.createClass({
   render: function () {
     var hi = <div><div className="headshot"></div><div className="hello">Hi, I'm <a href='/'>Lin Clark</a></div></div>;
-    var h = (this.props.path == "/") ? <IntroHeader>{hi}</IntroHeader> : {hi};
+    var h = (this.props.path == "/") ? <div className="intro"><p>Hi, I'm Lin Clark.</p><p>I like to code and talk about code.</p></div> : {hi};
     return (
       <header>
         {h}
-        <div className="find-me">
-          <a href="https://twitter.com/linclark"><img src={twitterImg} /></a>
-          <span className="divider">&#10731;</span>
-          <a href="https://github.com/linclark/"><img src={githubImg} /></a>
-        </div>
-        <hr />
       </header>
     )
   }

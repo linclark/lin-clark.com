@@ -1,59 +1,15 @@
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
   html,
   body {
     height: 100%;
   }
 
   body {
-    max-width: 1070px;
+    max-width: 900px;
     padding: 30px 100px;
   }
 
   #index main {
     height: calc(100%);
-  }
-  #index main section {
-    float: left;
-    width: 49%;
-  }
-
-  #index main section:last-child {
-    float: right;
-  }
-
-  #intro .hello {
-    font-size: 3em;
-    line-height: 1em;
-    margin: 0;
-    padding-top: 100px;
-  }
-
-  #intro .bio {
-  }
-
-  #intro .tagline {
-    font-size: 1.8em;
-    margin: 0;
-  }
-
-  .title {
-    font-size: 1.4em;
-  }
-
-  .headshot {
-    background-image: url("./../images/headshot-inside.jpg");
-    border-radius: 50%;
-    float: right;
-    height: 40px;
-    margin-left: 20px;
-    margin-top: -5px;
-    width: 40px;
-  }
-
-  #intro .headshot {
-    background-image: url("./../images/headshot.jpg");
-    height: 400px;
-    margin-top: 0;
-    width: 400px;
   }
 }

@@ -11,14 +11,14 @@ body {
   padding: 20px;
 }
 
-h1, h2, h3, h4, .hello {
+h2 {
   font-family: "Clarker Felt"
 }
 
 h1 {
-  color: #D45959;
+  color: #006dc6;
   font-size: 3.5em;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1em;
   margin: .2em 0;
 }
@@ -41,46 +41,90 @@ img {
   letter-spacing: .1em;
 }
 
+section {
+  padding-bottom: 2em;
+}
+
+#index section {
+
+}
+
 .see-all {
   color: inherit;
 }
 
-header {
+#subpage header {
   margin-bottom: 70px;
 }
 
-@media (max-width: 1000px) {
-
-  #intro .hello {
-    font-size: 1.5em;
-    line-height: 1em;
-    margin: 0;
+.intro {
+  background-image: url("./../images/speech-bubble.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #006dc6;
+  font-family: "Clarker Felt";
+  font-size: 1em;
+  margin-bottom: -5px;
+  padding: 1em;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .intro {
+    font-size: 1.2em;
   }
 
-  #intro .bio {
-    font-size: .8em;
+  #index main {
+    display: flex;
   }
+}
+@media (min-width: 600px) {
+  .intro {
+    font-size: 1.6em;
+  }
+}
+@media (min-width: 700px) {
+  .intro {
+    font-size: 2em;
+  }
+}
+@media (min-width: 800px) {
+  .intro {
+    font-size: 2.4em;
+  }
+}
+@media (min-width: 900px) {
+  .intro {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 1000px) {
+  .intro {
+    font-size: 3.2em;
+  }
+}
 
-  #intro .tagline {
-    font-size: 1em;
-    margin: 0;
-  }
-  @media (min-width: 580px) {
-    #intro .hello {
-      font-size: 3em;
-    }
-    .tagline {
-      font-size: 1.8em;
-    }
-  }
-  @media (min-width: 580px) {
-    #intro .hello {
-      font-size: 3em;
-    }
-    .tagline {
-      font-size: 1.8em;
-    }
-  }
+
+
+.intro p {
+  margin: 0;
+}
+
+.intro p:first-of-type {
+  font-size: 1.5em;
+}
+
+.self-portrait {
+  height:100%;
+  padding: 0 2em;
+  width: 20%;
+}
+
+#index .content {
+  margin-top: 60px;
+}
+
+.title {
+  font-size: 1.4em;
 }
 
 hr {
@@ -91,7 +135,7 @@ hr {
 }
 
 a {
-  color: #D45959;
+  color: #006dc6;
   text-decoration: none;
 }
 
@@ -118,7 +162,7 @@ a {
   padding-bottom: 1em;
 }
 
-#home h2 {
+#index h2 {
   margin-top: 0;
 }
 
